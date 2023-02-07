@@ -30,6 +30,7 @@ html {
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.5rem;
+    --fs-h4: 1.25rem;
     --fs-body: 1rem;
 
     /*Layered box shadow*/
@@ -65,6 +66,11 @@ h3 {
     font-size: var(--fs-h3);
 }
 
+h4 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+}
+
 /*  Header top bar  */
 
 .top-bar {
@@ -81,10 +87,16 @@ h3 {
 
 .tb-dark a {
     color: var(--clr-light);
+    text-decoration: none;
 }
 
 .tb-white a {
     color: var(--clr-dark);
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: var(--clr-accent);
 }
 
 .top-bar-social {
@@ -96,4 +108,48 @@ h3 {
 .top-bar-social-item {
     padding: 3% 16%;
     font-size: 1.2rem;
+}
+
+/*  Main Header */
+
+.main-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2%;
+    align-items: center;
+}
+
+.main-header-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+h1 {
+    padding-top: 3%;
+}
+
+nav {
+    width: 55%;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--clr-dark);
+    width: 100%;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+}
+
+.navbar a:hover {
+    color: var(--clr-accent);
 }
