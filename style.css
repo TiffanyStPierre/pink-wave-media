@@ -51,6 +51,10 @@ img {
     max-width: 100%;
 }
 
+em {
+    font-style: italic;
+}
+
 h1 {
     font-family: var(--ff-title);
     font-weight: var(--fw-bold);
@@ -88,6 +92,11 @@ h4 {
 .btn-dark {
     background-color: var(--clr-accent);
     color: var(--clr-white);
+}
+
+.btn-light {
+    border: 2.5px solid var(--clr-dark);
+    font-weight: var(--fw-bold);
 }
 
 /*  Header top bar  */
@@ -332,4 +341,106 @@ h2 {
 
 .our-process a {
     margin: 1.5% 0 3% 0;
+}
+
+/*  Our Work Section  */
+
+.our-work {
+    color: var(--clr-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+}
+
+.our-work h3 {
+    text-align: center;
+    padding: 3% 0 1% 0;
+}
+
+.our-work-subtitle {
+    text-align: center;
+    width: 60%;
+    margin: 0.5% auto;
+    font-size: var(--fs-h4);
+}
+
+.work-sample-images {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    margin: 4% auto;
+}
+
+.testimonials {
+    color: var(--clr-dark);
+    width: 60%;
+    margin: 0 auto 5% auto;
+    line-height: 1.35;
+}
+
+.testimonials h3 {
+    text-align: center;
+    padding: 3% 0 1% 0;
+}
+
+.testimonial-subtitle {
+    font-weight: var(--fw-semi-bold);
+    font-size: var(--fs-h4);
+    margin: 3% 0;
+    text-align: center;
+}
+
+.testimonial {
+    margin: 4% 0 6% 0;
+}
+
+.testimonial-attribution {
+    text-align: right;
+    margin: 1% 0;
+    font-weight: var(--fw-bold);
+}
+
+footer {
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer h3 {
+    text-align: center;
+    padding: 3% 0 1% 0;
+}
+
+footer p {
+    margin: 1.5% 0;
+    font-size: var(--fs-h4);
+}
+
+footer a {
+    color: var(--clr-light);
+    text-decoration: none;
+    font-size: var(--fs-h4);
+    margin-bottom: 2%;
+}
+
+footer a:hover {
+    color: var(--clr-accent);
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3.5%;
+}
+
+.footer-social-item {
+    padding: 6%;
+    margin: 4%;
+}
+
+.footer-social a {
+    font-size: var(--fs-h3);
 }
