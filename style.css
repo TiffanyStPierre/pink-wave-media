@@ -78,6 +78,22 @@ h4 {
     font-size: var(--fs-h4);
 }
 
+@media (max-width: 1425px) {
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    h3 {
+        font-size: 1.45rem;
+    }
+}
+
 .btn {
     display: inline-block;
     background-color: var(--clr-white);
@@ -228,7 +244,7 @@ h1 {
 
     .logo {
         max-width: 65px;
-    }    
+    }
 }
 
 nav {
@@ -379,6 +395,7 @@ nav {
 }
 
 @media (max-width: 350px) {
+
     .hamburger,
     .hamburger::before,
     .hamburger::after {
@@ -534,31 +551,31 @@ h2 {
         color: #112F6D;
         font-size: 2.3rem;
     }
-    
+
     .hero-h2-section a {
         margin: 0 0 3% 0;
     }
-    
+
 }
 
 @media (max-width: 570px) {
-   .hero-h2-section h2 {
-    width: 90%;
-    font-size: 1.8rem;
-   }
+    .hero-h2-section h2 {
+        width: 90%;
+        font-size: 1.8rem;
+    }
 }
 
 @media (max-width: 450px) {
     .hero-h2-section h2 {
-     font-size: 1.5rem;
+        font-size: 1.5rem;
     }
- }
+}
 
- @media (max-width: 350px) {
+@media (max-width: 350px) {
     .hero-h2-section h2 {
-     font-size: 1.25rem;
+        font-size: 1.25rem;
     }
- }
+}
 
 /*  Our Work Section */
 
@@ -575,21 +592,21 @@ h2 {
 
 .about-us h3 {
     text-align: center;
-    padding: 3% 0 1% 0;
+    padding: 5% 0 2% 0;
 }
 
 .about-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 6% auto;
 }
 
 .about-card {
     width: 25rem;
     height: 20rem;
-    margin: 3%;
+    margin: 2%;
     background-color: var(--clr-white);
     color: var(--clr-dark);
     border-radius: 15px;
@@ -620,7 +637,71 @@ h2 {
 }
 
 .about-us a {
-    margin-bottom: 3%;
+    margin-bottom: 5%;
+}
+
+@media (max-width: 1435px) {
+    .about-us-intro {
+        font-size: 1.15rem;
+        width: 65%;
+    }
+
+    .about-card {
+        width: 21rem;
+        height: 21rem;
+    }
+}
+
+@media (max-width: 1205px) {
+    .about-card {
+        width: 25rem;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 915px) {
+    .about-us-intro {
+        width: 85%
+    }
+
+    .about-card {
+        width: 65%;
+        height: auto;
+        padding: 5%;
+        margin: 4%;
+    }
+
+    .about-card-title {
+        padding-bottom: 4%;
+    }
+
+    .about-us {
+        background-image: none;
+        background-color: #020200;
+    }
+
+    .mobile-background-photo {
+        background-image: url(images/laptop-background-lg.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 350px;
+    }
+}
+
+@media (max-width: 640px) {
+    .mobile-background-photo {
+        background-image: url(images/laptop-background-sm.webp);
+    }
+
+    .about-card {
+        width: 80%;
+    }
+    
+    .about-us-intro {
+        font-size: 1rem;
+    }
 }
 
 /*  Our Process Section  */
