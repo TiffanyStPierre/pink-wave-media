@@ -230,7 +230,7 @@ h1 {
 
 @media (max-width: 500px) {
     .main-header {
-        padding: 2% 2% 1% 1%;
+        padding: 2% 2% 2% 1%;
     }
 
     h1 {
@@ -345,7 +345,7 @@ nav {
     }
 
     .nav-open .hamburger::before {
-        transform: rotate(90deg) translateX(-8px);
+        transform: rotate(90deg) translateX(-10px);
         background: var(--clr-light);
     }
 
@@ -419,6 +419,10 @@ nav {
 
     .hamburger::after {
         bottom: 8px;
+    }
+
+    .nav-open .hamburger::before {
+        transform: rotate(90deg) translateX(-8px);
     }
 
     .nav-toggle {
@@ -542,10 +546,15 @@ h2 {
         height: auto;
     }
 
+    .hero-img img {
+        box-shadow: none;
+    }
+
     .hero-h2-section {
         align-items: center;
         background-color: var(--clr-white);
         color: #112F6D;
+        box-shadow: none;
     }
 
     .hero-h2-section h2 {
@@ -572,6 +581,11 @@ h2 {
 @media (max-width: 450px) {
     .hero-h2-section h2 {
         font-size: 1.6rem;
+        padding: 3% 0 7% 0;
+    }
+
+    .hero-h2-section {
+        margin: 2% auto;
     }
 }
 
@@ -801,6 +815,10 @@ h2 {
     .process-card {
         width: 90%;
     }
+
+    .our-process h3 {
+        padding: 10% 0 4% 0;
+    }
 }
 
 /*  Our Work Section  */
@@ -869,6 +887,16 @@ h2 {
         font-size: 1.15rem;
         margin: 2.5% auto;
         width: 90%;
+    }
+}
+
+@media (max-width: 450px) {
+    .our-work h3 {
+        padding: 6% 0 1.5% 0;
+    }
+    
+    .our-work-subtitle {
+        margin: 3% auto;
     }
 }
 
@@ -1133,5 +1161,7 @@ footer a:hover {
 @media (max-width: 550px) {
     .portfolio-main h2 {
         font-size: 1.65rem;
+        padding: 0;
+        margin: 18% auto 9% auto;
     }
 }
