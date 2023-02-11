@@ -585,7 +585,7 @@ h2 {
     }
 
     .hero-h2-section {
-        margin: 2% auto;
+        padding: 2%;
     }
 }
 
@@ -618,12 +618,12 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 95%;
-    margin: 6% auto;
+    margin: 2.5% auto 6% auto;
 }
 
 .about-card {
     width: 25rem;
-    height: 20rem;
+    height: 21.5rem;
     margin: 2%;
     background-color: var(--clr-white);
     color: var(--clr-dark);
