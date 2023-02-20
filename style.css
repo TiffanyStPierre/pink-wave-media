@@ -598,7 +598,7 @@ h2 {
 /*  Our Work Section */
 
 .about-us {
-    background-image: url(images/laptop-background-lg.webp);
+    background: linear-gradient( rgba(211, 211, 211, 0.1), rgba(211, 211, 211, 0.1) ), url(images/laptop-background-lg.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -695,11 +695,11 @@ h2 {
 
     .about-us {
         background-image: none;
-        background-color: #020200;
+        background-color: #171715;
     }
 
     .mobile-background-photo {
-        background-image: url(images/laptop-background-lg.webp);
+        background: linear-gradient( rgba(211, 211, 211, 0.1), rgba(211, 211, 211, 0.1) ), url(images/laptop-background-lg.webp);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -710,7 +710,10 @@ h2 {
 
 @media (max-width: 640px) {
     .mobile-background-photo {
-        background-image: url(images/laptop-background-sm.webp);
+        background: linear-gradient( rgba(211, 211, 211, 0.1), rgba(211, 211, 211, 0.1) ), url(images/laptop-background-sm.webp);
+        background-position: center;
+        background-size: cover;
+        min-height: 250px;
     }
 
     .about-card {
